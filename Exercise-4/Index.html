@@ -1,0 +1,168 @@
+<!-- 
+    Final Project
+    Buatlah sebuah web dengan kriteria sebagai berikut:
+
+    Memiliki slider image
+    Menggunakan form dan gunakanlah Formspree untuk melihat hasil submit dari form tersebut
+    Menggunakan modal
+    Memiliki 3 halaman (minimal)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/slider.css">
+
+    <title>Exercise-4 || JSDC-B18</title></title>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="./Index.html">Blog Kereta Tua</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./Index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./About.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Contact.html">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Header -->
+    <header>
+      <!-- Image slider crossfade effect -->
+      <div id="slide1" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#slide1" data-slide-to="0" class="active"></li>
+          <li data-target="#slide1" data-slide-to="1"></li>
+          <li data-target="#slide1" data-slide-to="2"></li>
+          <li data-target="#slide1" data-slide-to="3"></li>
+          <li data-target="#slide1" data-slide-to="4"></li>
+          <li data-target="#slide1" data-slide-to="5"></li>
+          <li data-target="#slide1" data-slide-to="6"></li>
+          <li data-target="#slide1" data-slide-to="7"></li>
+          <li data-target="#slide1" data-slide-to="8"></li>
+          <li data-target="#slide1" data-slide-to="9"></li>
+          <li data-target="#slide1" data-slide-to="10"></li>
+          <li data-target="#slide1" data-slide-to="11"></li>
+          <li data-target="#slide1" data-slide-to="12"></li>
+          <li data-target="#slide1" data-slide-to="13"></li>
+          <li data-target="#slide1" data-slide-to="14"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./asset/img/train01.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./asset/img/train02.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./asset/img/train03.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./asset/img/train04.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./asset/img/train05.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./asset/img/train06.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./asset/img/train07.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./asset/img/train08.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./asset/img/train09.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./asset/img/train10.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./asset/img/train11.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./asset/img/train12.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./asset/img/train13.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./asset/img/train14.jpg">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./asset/img/train15.jpg">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#slide1" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#slide1" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Page Content (Blog) -->
+    <section class="py-5">
+        <div class="container jumbotron">
+            <h1><b>Kereta Api</b></h1>
+              <p class="lead">Kereta api adalah bentuk transportasi rel yang terdiri dari serangkaian kendaraan yang ditarik 
+                sepanjang jalur kereta api untuk mengangkut kargo atau penumpang. Gaya gerak disediakan oleh lokomotif 
+                yang terpisah atau motor individu dalam beberapa unit. Meskipun propulsi historis mesin uap mendominasi, 
+                bentuk-bentuk modern yang paling umum adalah mesin diesel dan listrik lokomotif, 
+                yang disediakan oleh kabel overhead atau rel tambahan. Sumber energi lain termasuk kuda, 
+                tali atau kawat, gravitasi, pneumatik, baterai, dan turbin gas. Rel kereta api biasanya terdiri dari dua, 
+                tiga atau empat rel, dengan sejumlah monorel dan guideways maglev dalam campuran. 
+                Kata 'train' berasal dari bahasa Prancis Tua trahiner, dari bahasa Latin trahere 'tarik, menarik'.[<a href="https://id.wikipedia.org/wiki/Kereta_api#cite_note-1">1</a>]
+                <br>
+                Ada berbagai jenis kereta api yang dirancang untuk tujuan tertentu. 
+                Kereta api bisa terdiri dari kombinasi satu atau lebih dari lokomotif dan gerbong kereta terpasang, 
+                atau beberapa unit yang digerakkan sendiri (atau kadang-kadang pelatih bertenaga tunggal atau diartikulasikan, 
+                disebut sebuah kereta mobil). Kereta pertama dengan bentuk ditarik menggunakan tali, 
+                gravitasi bertenaga atau ditarik oleh kuda. Dari awal abad ke-19 hampir semuanya didukung oleh lokomotif uap. 
+                Dari tahun 1910-an dan seterusnya lokomotif uap mulai digantikan oleh kurang dan bersih (tetapi lebih kompleks dan mahal) 
+                lokomotif diesel dan lokomotif listrik, sementara pada waktu yang sama beberapa kendaraan unit yang digerakkan sendiri baik 
+                sistem tenaga menjadi jauh lebih umum dalam pelayanan penumpang. Baca lebih <a href="https://id.wikipedia.org/wiki/Kereta_api"> Lanjut ... </a>
+              </p>
+              <br>
+            <p>Sumber : <a href="https://id.wikipedia.org/wiki/Kereta_api"> Wikipedia </a></p>
+        </div>
+    </section>
+    <!-- End Page Content -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; bstddev 2019</p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
